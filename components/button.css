@@ -7,8 +7,8 @@ padding: 10px;
 border-radius: 10px;
 border-style: solid;
 border-color: var(--success);
-position: relative;
-bottom: 60px;
+position: absolute;
+bottom: 100px;
 align-self: center;
 }
 

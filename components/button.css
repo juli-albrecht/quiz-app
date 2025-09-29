@@ -1,0 +1,19 @@
+.button {
+ all: unset;
+ background-color: var(--background-light);
+ width: 50%;
+ height: 20px;
+padding: 10px;
+border-radius: 10px;
+border-style: solid;
+border-color: var(--success);
+position: relative;
+bottom: 60px;
+align-self: center;
+}
+
+.button-text {
+    color: var(--success);
+    align-self: center;
+    position: absolute;
+}

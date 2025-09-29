@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #72a5f7;
+  --background-light: #c1c8d6;
+  --background-dark: #111827;
+  --text-light: #111827;
+  --text-dark: #F3F4F6;
+  --sucess: #002fff;
+}
+
+body, html, h1 {
+  margin: 0;  
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+background-color: var(--background-light);
+}
+

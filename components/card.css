@@ -17,6 +17,7 @@ height: 300px;
   border-color: var(--success);
   position: relative;
   z-index: 1;
+  box-shadow: 4px 4px 10px var(--background-dark);
 }
 
 

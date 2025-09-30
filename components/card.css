@@ -6,7 +6,7 @@
   justify-content: flex-start;
   top: 40px;
   margin: 10%;
- width: 400px;
+ width: 70%;
 height: 300px;
   background: var(--primary-color);
   color: var(--text-light);
@@ -61,6 +61,7 @@ h3{
 all: unset;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-between;
 gap: 75px;
 position: absolute;

@@ -1,24 +1,24 @@
 .card-container {
-  margin-bottom: 150px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  top: 40px;
-  margin: 10%;
-  width: 70%;
   background: var(--primary-color);
   color: var(--text-light);
-  padding: 20px;
+  padding: 1rem;
   border-radius: 0.5rem;
   border-width: 0.2rem;
   border-style: solid;
   border-color: var(--success);
   position: relative;
   z-index: 1;
-  box-shadow: 4px 4px 10px var(--background-dark);
+  box-shadow: 0.1rem 0.1rem 0.3rem var(--background-dark);
 }
 
 .card-bookmark {
@@ -40,20 +40,11 @@
 }
 
 h2 {
-  justify-content: flex-start;
-  align-self: center;
-  margin-bottom: 10px;
-  top: 0px;
   text-align: center;
-  font-size: 1.5rem;
 }
 
 h3 {
-  justify-content: flex-start;
-  align-self: center;
-  margin-bottom: 15px;
   text-align: center;
-  font-size: 1rem;
 }
 
 button {
@@ -62,8 +53,9 @@ button {
 
 .tag-container {
   all: unset;
+  display: flex;
   justify-content: space-around;
-  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .tags {

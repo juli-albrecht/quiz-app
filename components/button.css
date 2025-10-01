@@ -1,15 +1,18 @@
-.button {
+.button-container {
   all: unset;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
   background-color: var(--background-light);
   padding: 10px;
   border-radius: 3rem;
   border-width: 0.2rem;
   border-style: solid;
   border-color: var(--success);
-  align-self: center;
-  text-align: center;
   color: var(--success);
-  box-shadow: 4px 4px 10px var(--background-dark);
+  box-shadow: 0.1rem 0.1rem 0.3rem var(--background-dark);
 }
 
 .button:hover {

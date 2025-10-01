@@ -1,25 +1,18 @@
 .button {
- all: unset;
- background-color: var(--background-light);
- width: 50%;
- height: 20px;
-padding: 10px;
-border-radius: 30px;
-border-style: solid;
-border-color: var(--success);
-position: absolute;
-bottom: 100px;
-align-self: center;
-color: var(--success);
- box-shadow: 4px 4px 10px var(--background-dark)
-}
-
-.button-text {
-    align-self: center;
-    position: absolute;
+  all: unset;
+  background-color: var(--background-light);
+  padding: 10px;
+  border-radius: 3rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: var(--success);
+  align-self: center;
+  text-align: center;
+  color: var(--success);
+  box-shadow: 4px 4px 10px var(--background-dark);
 }
 
 .button:hover {
-  background-color: var(--success);  
+  background-color: var(--success);
   color: var(--text-dark);
 }

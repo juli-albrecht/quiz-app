@@ -5,19 +5,71 @@
 @import url("./components/button.css");
 
 .profile {
-  position: fixed;
-  top: 100px;
+  margin-top: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .profile-image {
-  width: 40%;
+  max-width: 250px;
   border-radius: 50%;
 }
 
-.about {
-  margin-top: 350px;
+/* @media (max-width: 1200px) {
+    .profile-image {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .profile-image {
+        width: 200px;  
+    }
+}
+
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 100px; 
+    } */
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-dark);
+  margin: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
   justify-content: flex-start;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.input-field {
+  all: unset;
+  border-color: var(--success);
+  border-style: solid;
+}
+
+.input-field:: {
+  border-style: double;
+  border-color: var(--success);
+}
+
+.question-answer-input {
+  all: unset;
+  border-color: var(--success);
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.align-left {
+  text-align: left;
 }

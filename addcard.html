@@ -5,27 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
   </head>
 
   <body class="background">
     <header class="header">
-      <h1>Profile 🙋</h1>
+      <h1>🧠 Quiz App 🧠</h1>
     </header>
-    <main>
-      <section class="profile">
-        <img src="./assets/juli-profile.jpg" class="profile-image" />
-        <h2>Juli Albrecht</h2>
-      </section>
-      <section class="bio">
-        <h3>About me</h3>
-        <label for="name">Username 👋:</label>
-        <input type="text" class="input-field" />
-        <label for="name">E-Mail 📧:</label>
-        <input type="text" class="input-field" />
-        <label for="name">Birthday 🎂:</label>
-        <input type="text" class="input-field" />
-      </section>
-      <section></section>
+    <main class="card-container">
+      <form data-js="form">
+        <section>
+          <h2 class="align-left">Your question:</h2>
+          <label for="inputQuestion">
+            <textarea
+              rows="7"
+              class="question-answer-input"
+              data-js="inputQuestion"
+              type="text"
+              name="inputQuestion"
+              id="inputQuestion"
+            ></textarea>
+          </label>
+        </section>
+
+        <section>
+          <h2 class="align-left">Your answer:</h2>
+          <label for="input-answer">
+            <textarea
+              rows="7"
+              class="question-answer-input"
+              data-js="inputAnswer"
+              type="text"
+              name="inputAnswer"
+              id="inputAnswer"
+            ></textarea>
+          </label>
+        </section>
+
+        <section>
+          <h2 class="align-left">Add a tag:</h2>
+          <label for="input-tag">
+            <textarea
+              rows="1"
+              class="question-answer-input"
+              data-js="inputTag"
+              type="text"
+              name="inputTag"
+              id="inputTag"
+            ></textarea>
+          </label>
+        </section>
+
+        <button
+          type="submit"
+          class="button button--submit"
+          data-js="submitButton"
+        >
+          Submit
+        </button>
+      </form>
     </main>
 
     <footer class="footer">
@@ -65,7 +103,7 @@
           </a>
         </button>
 
-        <button class="icons">
+        <button class="icons active-icon">
           <a href="addcard.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +121,7 @@
           </a>
         </button>
 
-        <button class="icons active-icon">
+        <button class="icons">
           <a href="profile.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"

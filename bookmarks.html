@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
   </head>
 
   <body class="background">
     <header class="header">
       <h1>🧠 Quiz App 🧠</h1>
     </header>
-    <main>
+    <main class="card-container">
       <section class="card">
         <h2>
-          Welches Organ im menschlichen Körper filtert Giftstoffe aus dem Blut
-          🩸?
+          Welcher Bestandteil der Zelle ist für die Energieproduktion
+          verantwortlich ⚡️?
         </h2>
-        <h3>Die Leber</h3>
+        <h3>Mitochondrium</h3>
+
         <button class="card-bookmark active">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,32 +31,24 @@
             <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
           </svg>
         </button>
-
-        <button class="button">
-          <p class="button-text">Antwort verbergen</p>
-        </button>
-
+        <section class="button-container">
+          <button class="button">Antwort verbergen</button>
+        </section>
         <section class="tag-container">
-          <button class="tags">
-            <p class="tag-text">Organe</p>
-          </button>
+          <button class="tags">Zelle</button>
 
-          <button class="tags">
-            <p class="tag-text">Biologie</p>
-          </button>
+          <button class="tags">Stoffwechsel</button>
 
-          <button class="tags">
-            <p class="tag-text">Körper</p>
-          </button>
+          <button class="tags">Biologie</button>
         </section>
       </section>
 
       <section class="card">
         <h2>
-          Wie heißt das Molekül, das in den Zellen Energie speichert und als
-          „Energie­währung“ gilt ⚡️?
+          Welche Art der Zellteilung führt zu zwei genetisch identischen
+          Tochterzellen 🧫?
         </h2>
-        <h3>Adenosintriphosphat (ATP)</h3>
+        <h3>Die Mitose</h3>
         <button class="card-bookmark active">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -66,32 +60,24 @@
             <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
           </svg>
         </button>
-
-        <button class="button">
-          <p class="button-text">Antwort verbergen</p>
-        </button>
-
+        <section class="button-container">
+          <button class="button">Antwort verbergen</button>
+        </section>
         <section class="tag-container">
-          <button class="tags">
-            <p class="tag-text">Zelle</p>
-          </button>
+          <button class="tags">Cytologie</button>
 
-          <button class="tags">
-            <p class="tag-text">Energie</p>
-          </button>
+          <button class="tags">Zellzyklus</button>
 
-          <button class="tags">
-            <p class="tag-text">Biologie</p>
-          </button>
+          <button class="tags">Biologie</button>
         </section>
       </section>
 
       <section class="card">
-        <h2>Wie viele schwarze Punkte auf dem Fell hat ein Gepard 🐆?</h2>
-        <h3>
-          Zwischen 2.000 und 3.000 Punkte befinden sich auf dem Fell eines
-          Geparden.
-        </h3>
+        <h2>
+          In welchem Teil des Verdauungstraktes beginnt die Verdauung von
+          Kohlenhydraten 🥖?
+        </h2>
+        <h3>Im Mund</h3>
         <button class="card-bookmark active">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -103,23 +89,15 @@
             <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
           </svg>
         </button>
-
-        <button class="button">
-          <p class="button-text">Antwort verbergen</p>
-        </button>
-
+        <section class="button-container">
+          <button class="button">Antwort verbergen</button>
+        </section>
         <section class="tag-container">
-          <button class="tags">
-            <p class="tag-text">Tiere</p>
-          </button>
+          <button class="tags">Körper</button>
 
-          <button class="tags">
-            <p class="tag-text">Biologie</p>
-          </button>
+          <button class="tags">Organe</button>
 
-          <button class="tags">
-            <p class="tag-text">Wissen</p>
-          </button>
+          <button class="tags">Verdauung</button>
         </section>
       </section>
     </main>
@@ -157,6 +135,24 @@
               class="lucide lucide-bookmark-icon lucide-bookmark"
             >
               <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </a>
+        </button>
+
+        <button class="icons">
+          <a href="addcard.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-plus-icon lucide-circle-plus"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12h8" />
+              <path d="M12 8v8" />
             </svg>
           </a>
         </button>

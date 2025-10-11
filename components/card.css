@@ -45,6 +45,7 @@ h2 {
 
 h3 {
   text-align: center;
+  color: var(--text-dark);
 }
 
 button {
@@ -54,7 +55,8 @@ button {
 .tag-container {
   all: unset;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-top: 1.5rem;
 }
 

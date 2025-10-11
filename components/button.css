@@ -5,17 +5,31 @@
 }
 
 .button {
-  background-color: var(--background-light);
+  background-color: var(--success);
   padding: 10px;
   border-radius: 3rem;
   border-width: 0.2rem;
   border-style: solid;
   border-color: var(--success);
-  color: var(--success);
+  color: var(--text-dark);
   box-shadow: 0.1rem 0.1rem 0.3rem var(--background-dark);
+  transform: scale(1);
+  transition: transform 1s ease;
 }
 
 .button:hover {
-  background-color: var(--success);
-  color: var(--text-dark);
+  background-color: var(--background-dark);
+  box-shadow: 0.1rem 0.1rem 0.3rem #000000;
+}
+
+.button--submit {
+  align-self: center;
+  min-width: 10rem;
+  text-align: center;
+  transform: scale(1);
+}
+
+.button--submit-active {
+  transform: scale(1.1);
+  transition: transform 1s ease;
 }

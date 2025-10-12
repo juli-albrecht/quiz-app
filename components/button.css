@@ -22,8 +22,8 @@
   box-shadow: 0.1rem 0.1rem 0.3rem #000000;
 }
 
-.button--submit {
-  align-self: center;
+.button-submit {
+  margin-top: 1rem;
   min-width: 10rem;
   text-align: center;
   transform: scale(1);

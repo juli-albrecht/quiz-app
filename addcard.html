@@ -12,57 +12,53 @@
     <header class="header">
       <h1>🧠 Quiz App 🧠</h1>
     </header>
-    <main class="card-container">
-      <form data-js="form">
+    <main data-js="card">
+      <form data-js="new-card-form" class="new-card-form">
         <section>
           <h2 class="align-left">Your question:</h2>
-          <label for="inputQuestion">
-            <textarea
-              rows="7"
-              class="question-answer-input"
-              data-js="inputQuestion"
-              type="text"
-              name="inputQuestion"
-              id="inputQuestion"
-            ></textarea>
-          </label>
+          <textarea
+            aria-label="your question"
+            rows="7"
+            class="question-answer-input"
+            type="text"
+            name="inputQuestion"
+            id="inputQuestion"
+          ></textarea>
         </section>
 
         <section>
           <h2 class="align-left">Your answer:</h2>
-          <label for="input-answer">
-            <textarea
-              rows="7"
-              class="question-answer-input"
-              data-js="inputAnswer"
-              type="text"
-              name="inputAnswer"
-              id="inputAnswer"
-            ></textarea>
-          </label>
+          <label for="input-answer"></label>
+          <textarea
+            rows="7"
+            class="question-answer-input"
+            type="text"
+            name="inputAnswer"
+            id="inputAnswer"
+          ></textarea>
         </section>
 
         <section>
           <h2 class="align-left">Add a tag:</h2>
-          <label for="input-tag">
-            <textarea
-              rows="1"
-              class="question-answer-input"
-              data-js="inputTag"
-              type="text"
-              name="inputTag"
-              id="inputTag"
-            ></textarea>
-          </label>
+          <label for="input-tag"></label>
+          <textarea
+            rows="1"
+            class="question-answer-input"
+            type="text"
+            name="inputTag"
+            id="inputTag"
+          ></textarea>
         </section>
 
-        <button
-          type="submit"
-          class="button button--submit"
-          data-js="submitButton"
-        >
-          Submit
-        </button>
+        <div class="center">
+          <button
+            type="submit"
+            class="button button-submit"
+            data-js="submitButton"
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </main>
 

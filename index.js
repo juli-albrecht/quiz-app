@@ -1,23 +1,19 @@
-const submitButton = document.querySelector("[data-js=submitButton]");
-const form = document.querySelector('[data-js="new-card-form"]');
-const cardContainer = document.querySelector('[data-js="card"]');
+const bookmarkButton = document.querySelector('[data-js="card-bookmark"]');
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButton.classList.toggle("active");
+});
 
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-  console.log("user data:", data);
+const answerButton = document.querySelector('[data-js="answer-button"]');
+const cardAnswer = document.querySelector('[data-js="card-answer"]');
+answerButton.addEventListener("click", () => {
+  const isHidden = cardAnswer.hasAttribute("hidden");
 
-  const newCard = document.createElement("section");
-  newCard.classList.add("card");
-
-  const questionHeading = document.createElement("h2");
-  questionHeading.innerText = data.inputQuestion;
-  newCard.append(questionHeading);
-
-  cardContainer.append(newCard);
-  // console.log(newListElement);
-
-  event.target.reset();
+  if (isHidden) {
+    cardAnswer.removeAttribute("hidden");
+    answerButton.textContent = "Antwort verbergen";
+  } else {
+    cardAnswer.setAttribute("hidden", "");
+    answerButton.textContent = "Antwort anzeigen";
+  }
 });
